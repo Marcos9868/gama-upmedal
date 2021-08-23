@@ -1,0 +1,21 @@
+.socialNetworkWrapper{
+    margin-top: 22px;
+    margin-right: 35px;
+}
+
+.socialNetworkImage{
+    background-color: #fff;
+}
+
+.socialNetworkImage--linkedin{
+    background-color: blue;
+}
+
+.footerLayout{
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    padding-top: 30px;
+}

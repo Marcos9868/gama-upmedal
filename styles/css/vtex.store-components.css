@@ -1,0 +1,113 @@
+.searchBarContainer{
+    width: 800px;
+}
+
+.searchBarContainer :global(.vtex-input-prefix__group) {
+    border: none;
+    border-radius: 0;
+    border-bottom: thin solid white;
+}
+
+.searchBarContainer :global(.vtex-input-prefix__suffix){
+    background: #212121;
+}
+
+.searchBarContainer :global(.vtex-styleguide-9-x-input){
+    background: #212121;
+    color: white
+}
+
+.autoCompleteOuterContainer{
+    color: #212121;
+    border-color: white;
+    
+}
+
+.searchBarIcon{
+    color: white;
+}
+
+.searchBarIcon--search{
+    background: #212121;
+}
+
+.noAppearance{
+    color: blue;
+}
+
+.logoImage{
+    height: 40px;
+    margin-top: 5px;
+}
+
+.vtex-input-prefix_group{
+    height: 45px;
+}
+
+.imageElement{
+    width: 850px;
+    height: 300px;
+    border-radius: 25px;
+    align-self: center;
+}
+
+.suffixWrapper{
+    background-color: #212121;
+}
+
+.sellingPriceValue, .installmentsPrice{
+    color: green
+}
+
+.element{
+    background-color: #212121;
+}
+
+.swiperCaret{
+    color: #fff;
+    transform: translate(0px, 45px);
+}
+
+.caretIcon{
+    height: 15px;
+}
+
+.carouselGalleryThumbs{
+    visibility: hidden;
+}
+
+.swiperBullet--active{
+    color: #59ff80;
+}
+
+.carouselGaleryThumbs{
+    display: none;
+}
+
+.carouselGaleryCursor{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.productImagesGallerySlide{
+    max-height: 300px;
+    margin-bottom: 50px;
+}
+
+.swiperCaretPrev,
+.swiperCaretNext {
+    top: 220px;
+}
+
+.imageElementLink{
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.logoLink--image-header{
+    align-items: center;
+    justify-content: center;
+}
+

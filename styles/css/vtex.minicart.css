@@ -1,0 +1,34 @@
+.openIconContainer{
+    color: green;
+    margin-right: 170px;
+}
+
+.cartIcon{
+    color: green;
+    width: 25px;
+    height: 25px;
+}
+
+.drawerContainer{
+    background-color: #202020;
+}
+
+.closeIconContainer{
+    color: #59ff80
+}
+
+.minicartTitle{
+    color: #59ff80;
+}
+
+.minicartProductListContainer{
+    background-color: #303030;
+}
+
+.minicartCheckButton{
+    margin-top: 30px;
+}
+
+.minicartSummary{
+    color: #202020;
+}

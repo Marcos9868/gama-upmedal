@@ -1,0 +1,36 @@
+.flexRowContent{
+    background-color: #212121;
+    height: 76px;
+}
+
+.flexRowContent--slider{
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+}
+
+.flexColChild--image-header{
+    background-color: #212121;
+}
+
+.flexColChild--footer-desktop{
+    background-color: #303030;
+    margin-top: 30px;
+}
+
+.stretchChildrenWidth{
+    background-color: #424242;
+}
+
+.flexRow{
+    
+}
+
+.flexRowContent--layout-form{
+    height: 350px;
+    position: relative;
+    background-color: #303030;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding-bottom: 30px;
+}

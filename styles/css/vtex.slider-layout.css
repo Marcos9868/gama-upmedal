@@ -1,0 +1,30 @@
+.slider-banner{
+    width: 800px;
+    padding: 30px;
+}    
+
+.paginationDot--isActive{
+    background-color: green;
+}
+
+.slide{
+    background: transparent;
+}
+
+.slide--visible{
+    background-color: #303030;
+}
+
+.sliderTrack{
+    background-color: #303030;
+}
+
+.paginationDotsContainer{
+    transform: translate(0px, 25px);
+}
+
+.sliderArrows{
+    color: white;
+    transform: translate(0px, 165px); 
+    width: 3%;
+}
