@@ -1,0 +1,42 @@
+{
+ "flex-layout.row":{
+  "children":[
+    "slider-layout#home"
+  ],
+  "props":{
+    "blockClass": "slider-banner",
+    "marginTop": 10,
+    "marginBottom": 10
+  }
+ },
+  "slider-layout#home": {
+    "props": {
+      "sticky": true,
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+    },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel-banner",
+      "fullWidth": true
+    },
+    "children": [
+      "image#banner1", 
+      "image#banner2"
+    ]
+  },
+  "image#banner1": {
+    "props": {
+      "src": "assets/banner-woodsport.png",
+      "maxHeight": 380
+    }
+  },
+  "image#banner2": {
+    "props": {
+      "src": "assets/img-grandes-guerreiros.png",
+      "maxHeight": 380
+    }
+  }
+}  

@@ -1,0 +1,91 @@
+{
+  "search-result-layout.customQuery#home-base": {
+      "props": {
+          "querySchema": {
+              "skusFilter": "FIRST_AVAILABLE",
+              "simulationBehavior": "skip"
+          }
+      },
+      "blocks": [
+          "search-result-layout.desktop#products",
+          "search-result-layout.mobile#products"
+      ]
+  },
+  "search-result-layout.desktop#products": {
+      "children": [
+          "search-content#products"
+      ],
+      "props": {
+          "PreventRouteChange": true
+      }
+  },
+  "search-result-layout.mobile#products": {
+      "children": [
+          "search-content#products"
+      ],
+      "props": {
+          "PreventRouteChange": true
+      }
+  },
+  "search-content#products": {
+      "blocks": [
+          "gallery#home",
+          "not-found"
+      ]
+  },
+  "gallery#home": {
+     "props": {
+      "category": "20",
+      "layouts": [
+      {
+        "name": "grid",
+        "component": "GridSummary",
+        "itemsPerRow": {
+          "(min-width:1300px)": 2,
+          "desktop": 2,
+          "tablet": 1,
+          "phone": 1
+        }
+       },
+       {
+        "name": "list",
+        "component": "ListSummary",
+        "itemsPerRow": {
+          "(min-width:1300px)": 4,
+          "desktop": 2,
+          "tablet": 1,
+          "phone": 1
+        }
+        }
+        ],
+        "ListSummary": "product-summary.shelf#home1",
+        "GridSummary": "product-summary.shelf#home1"
+    }
+  },
+  "product-summary.shelf#home1": {
+      "children": [
+          "product-summary-name",
+          "product-images#home",
+          "vtex.product-highlights@2.x:product-highlights",
+          "product-summary-price",
+          "add-to-cart-button"
+        ]
+    },
+    "product-images#home":{
+        "props":{
+            "showNavigationArrows": true,
+            "showPaginationDots": true
+        }
+    },
+    "vtex.product-highlights@2.x:product-highlights": {
+        "children": ["product-highlight-text"]
+      },
+      "product-highlight-text": {
+        "props": {
+          "message": "PRÉ-LANÇAMENTO",
+          "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "font": "t-heading-6"
+        }
+    }
+}      

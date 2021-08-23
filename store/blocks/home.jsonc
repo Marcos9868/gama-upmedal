@@ -1,0 +1,53 @@
+{
+  "store.home": { 
+    "blocks": [
+      "tab-layout#home-menu",
+      "search-result-layout.customQuery#home-base",
+      // "flex-layout.row#form"
+      "modal-trigger#newsletter"
+    ]
+  },
+  "modal-trigger#newsletter":{
+    "children":[
+      "rich-text#saiba-mais",
+      "modal-layout#form"
+    ]
+  },
+  "rich-text#saiba-mais":{
+    "props":{
+      "text": "SAIBA MAIS, CLIQUE AQUI",
+      "textPosition":"CENTER"
+    }
+  },
+  "modal-layout#form":{
+    "children":[
+      "flex-layout.row#form"
+    ]
+  },
+  "flex-layout.row#form": {
+    "props": {
+    "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "layout-form"
+    },
+    "children": ["newsletter-form#home"]
+  },
+  "newsletter-form#home": {
+    "children": [
+      "rich-text#newsletter",
+      "newsletter-input-email",
+      "newsletter-input-name",
+      "newsletter-input-phone",
+      "newsletter-submit"
+    ] 
+  },
+  "rich-text#newsletter":{
+    "props":{
+      "text": "INSCREVA-SE:",
+      "textPosition": "CENTER"
+    }
+  }  
+}

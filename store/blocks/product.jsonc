@@ -1,0 +1,18 @@
+{
+  "flex-layout.row#shelf-home":{
+    "children":[
+      "product-summary.shelf#home"
+    ]
+  },
+  "product-summary.shelf#home": {
+    "children": [
+      "product-summary-name",
+      "product-summary-image",
+      "product-rating-inline",
+      "product-summary-space",
+      "product-summary-price",
+      "product-summary-buy-button",
+      "add-to-cart-button"
+    ]
+  }
+}      

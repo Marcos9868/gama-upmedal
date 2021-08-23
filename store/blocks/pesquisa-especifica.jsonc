@@ -1,0 +1,76 @@
+{  
+"search-result-layout.customQuery#home-menu2": {
+    "props": {
+      "querySchema": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "Skip",
+        "orderByField": "OrderByTopSaleDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "queryField": "corinthians",
+        "mapField": "ft"
+      },
+      "preventRouteChange": true
+    },
+    "blocks": [
+      "search-result-layout.desktop#home",
+      "search-result-layout.mobile#home",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.customQuery#home-menu3": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByTopSaleDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "queryField": "palmeiras",
+        "mapField": "ft"
+      },
+      "preventRouteChange": true
+    },
+    "blocks": [
+      "search-result-layout.desktop#home",
+      "search-result-layout.mobile#home",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.customQuery#home-menu4": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByTopSaleDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "queryField": "signos",
+        "mapField": "ft"
+      },
+      "preventRouteChange": true
+    },
+    "blocks": [
+      "search-result-layout.desktop#home",
+      "search-result-layout.mobile#home",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.desktop#home": {
+    "props": {
+      "blockClass": "resultDesktop",
+      "preventRouteChange": true
+    },
+    "children": ["flex-layout.row#content"]
+  },
+  "search-result-layout.mobile#home": {
+    "props": {
+      "blockClass": "resultMobile"
+    },
+    "children": ["flex-layout.row#content"]
+  },
+  "flex-layout.row#content": {
+    "props": {
+      "marginTop": "3",
+      "marginBottom": "10"
+    },
+    "children": ["search-content"]
+  }
+}
+          

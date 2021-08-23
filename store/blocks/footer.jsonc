@@ -1,0 +1,62 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "sticky-layout#footer-desktop"
+    ],
+    "props": {
+    "fullWidth": true
+    }
+  },
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#footer-mobile"
+    ]
+  },
+  "sticky-layout#footer-desktop": {
+    "props": {
+      "blockClass": "sticky-footer",
+      "position": "bottom",
+      "verticalSpacing": 0
+    },
+    "children": ["flex-layout.row#footer-desktop"]
+  },
+  "flex-layout.row#footer-desktop": {
+    "children": [
+      "social-networks",
+      "image#suporte",
+      "login"
+      
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#footer-mobile": {
+    "children": [
+      "social-networks"]
+  },
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        { "url": "https://www.linkedin.com/in/marcos-melo-ferreira/", "name": "Linkedin" }
+      ]
+    }
+  },
+  "image#suporte":{
+    "props":{
+      "width": 40,
+      "height": 40,
+      "src": "assets/whatsapp.png",
+      "link": {
+        "url": "https://api.whatsapp.com/send?phone=5511964335064"
+      }
+    }
+  }
+}
